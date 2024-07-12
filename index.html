@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos al Pastor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tacos al Pastor</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#ingredients">Ingredientes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Los tacos al pastor son un platillo tradicional mexicano que se prepara con carne de cerdo marinada en una mezcla de especias y achiote, cocida lentamente en un trompo y servida en tortillas de maíz con piña, cebolla, cilantro y salsa.</p>
+            <img src="https://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg" alt="Tacos al Pastor" class="responsive-image">
+        </section>
+
+        <section id="ingredients">
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>Carne de cerdo marinada</li>
+                <li>Tortillas de maíz</li>
+                <li>Piña</li>
+                <li>Cebolla</li>
+                <li>Cilantro</li>
+                <li>Salsa</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <label for="address">Dirección de la Taquería:</label>
+                <input type="text" id="address" name="address" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="location">
+            <h2>Ubicación</h2>
+            <div id="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.3476694550313!2d-3.7020729303826183!3d40.42234731917864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422887c2e2c0dd%3A0xab37409fc28341b0!2sC.%20de%20Valverde%2C%2028%2C%20Centro%2C%2028004%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2smx!4v1719594569424!5m2!1ses!2smx" 
+                    width="800" 
+                    height="600" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Video</h2>
+            <div id="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/-nxKiXbM1hI?si=867oe9Raqa8Ss61N" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tacos al Pastor. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
