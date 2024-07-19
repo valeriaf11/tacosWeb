@@ -112,4 +112,34 @@ form button:hover {
       font-size: 1.2em;
   }
 }
-
+card{
+  width:100%;
+  max-width:500px;
+  border: 2px solid lightgrey;
+  border-radius:0.5rem;
+  padding:2rem;    
+  overflow: hidden; //es importante especificar que todo lo que se salga de la card se oculte
+}
+.titulo{
+  margin:0;
+  text-align:left;
+  font-size:1.5rem;    
+}
+.descripcion{
+  text-align:left;
+}
+.imagen{
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+.imagen:hover{
+  --escala: 5.2;
+  cursor:pointer;
+}.imagen{
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+.imagen:hover{
+  --escala: 1.2;
+  cursor:pointer;
+}
